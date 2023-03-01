@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/929adc29af.js" crossorigin="anonymous"></script>
+    <!-- Manifest File link --> 
+    <link rel="manifest" href="manifest.json">
+
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+
+                </ul>
+            </nav>
+            <div class="header-text">
+                <h1>Hi, I'm<br><span>Bhavik</span> Rajpal</h1>
+                <a href="images/cv.pdf" download class="btn-download">Download Cv</a>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/Bhavik.jpeg" class="about-img">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <br>
+                    <p>Hello I am engineering student at Vesit in my penultimate year of study pursuing B.E in
+                        Information Technology. I am fond of learning new technologies and upskill myself. Along with
+                        that I have keen intrest in web-development ,currently I am learning Javascript and aiming to
+                        learn fullstack webdevelopment using MERN stack</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('skills')">Skills</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="education">
+                        <ul>
+                            <li><span>2024</span><br>Vivekanand Education Society’s Institute of Technology (VESIT),
+                                University of Mumbai, India <br>
+                                <p>Bachelor of Engineering (B.E) in Information Technology | CGPA: 9.85/10 (Till 3rd
+                                    sem)</p>
+                            </li>
+                            <li><span>2020</span><br>Pemraj Sarda College, India</li>
+                            <li><span>2018</span><br>Sacred Heart Convent School, India </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="skills">
+                        <ul>
+                            <li><span>Languages :</span><br>C • C++ • Java • Python • JavaScript</li>
+                            <li><span>Web & database :</span><br>HTML • CSS • Mysql</li>
+                            <li><span>Frameworks :</span><br>Netbeans • Bootstrap • Tkinter</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-------portfolio------>
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/p1.png">
+                    <div class="layer">
+                        <h3>Hospital Management System</h3>
+                        <p>A user-friendly java application for managing Hospital databases using Mysql and Java. The
+                            application performs all the CRUD operations</p>
+                        <a href="https://github.com/bhavikrajpal49/Hospital-Management-System"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/p2.png">
+                    <div class="layer">
+                        <h3>Disease Prediction system</h3>
+                        <p>A Python application for Prediction of Disease using Naive Bayes Algorithm and Machine
+                            Learning.</p>
+                        <a href="https://github.com/bhavikrajpal49/Disease-Prediction-System"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/p3.png">
+                    <div class="layer">
+                        <h3>Tesla Website clone</h3>
+                        <p>This Project is a clone of the Tesla Website created using HTML, CSS & JavaScript.
+                        </p>
+                        <a href="https://github.com/bhavikrajpal49/Tesla-Clone"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <!----contact-->
+
+    <div id="contact">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> 2020.bhavik.rajpal@ves.ac.in</p>
+                <p><i class="fa-solid fa-phone"></i> 7972960389</p>
+                <div class="social-icons">
+                    <a href="https://twitter.com/BhavikRajpal"><i class="fa-brands fa-twitter"></i></i></a>
+                    <a href="https://www.instagram.com/bhavik_rajpal/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/bhavik-rajpal-868427212/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/bhavikrajpal49"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://leetcode.com/bhavik_rajpal/"><i class="fa-solid fa-code"></i></a>
+                </div>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="text" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn-form">Submit</button>
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+
+</body>
+<script src="/main.js"></script>
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname) {
+        for (tablink of tablinks) {
+            tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+
+</html>

@@ -1,0 +1,17 @@
+{
+    "name":"Portfolio Website", 
+    "short_name":"Portfolio", 
+    "start_url":"/index.html", 
+    "display":"standalone", 
+    "background_color":"#5900b3", 
+    "theme_color":"black",
+    "scope": ".",
+    "description":"This is a Portfolio website.", 
+    "icons":[
+    {
+    "src":"/images/1.png", 
+    "sizes":"512x512",
+    "type":"image/png"
+    }
+    ] 
+}
